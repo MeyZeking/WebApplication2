@@ -1,0 +1,51 @@
+a{
+    text-decoration:none;
+    color:black;
+}
+
+p{
+    margin:0;
+}
+
+.container{
+    width: 600px;
+}
+
+.container_main {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Create-client{
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 5px;
+    padding-right: 30px;
+}
+.listing{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-design{
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.client_data{
+    display: flex;
+}
+.Client_Id {
+    margin-left:30px;
+}
+
+.btn-save{
+    padding: 10px;
+    border-radius: 15px;
+}

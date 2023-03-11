@@ -1,0 +1,41 @@
+﻿@model IEnumerable<WebApplication2.Models.CreateClientViewModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+
+<div class="container">
+    <div class="container_main">
+        <a class="Create-client" asp-controller="Client" asp-action="CreateClient">Создать клиента</a>
+        <p class="text-page">Страница 1 из 10</p>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Идентификатор</th>
+                <th>Фамилия</th>
+                <th>Имя</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>    
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ClientId</td>
+                    <td>@item.LastName</td>
+                    <td>@item.Name</td>
+                    <td>@item.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="listing">
+        <buton class="btn-design">Назад</buton>
+        <buton class="btn-design">Вперед</buton>
+    </div>
+   
+</div>
